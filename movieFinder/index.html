@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/bootswatch/bootstrap.bootswatch.min.css">
+    <link rel="stylesheet" href="index.js">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container">
+            <a href="#" class="navbar-brand">Movie finder</a>
+        </div>
+    </nav>
+
+    <div class="empty-cont mt-1">
+        <div id="empty" class="empty text-center"></div>
+    </div>
+
+    <div class="container searchContainer mt-3">
+        <div class="search card card-body" id="card">
+            <h1>Search Your Movie</h1>
+            <p class="lead">Enter a movie to fetch profiles</p>
+            <input type="text" class="form-control" placeholder="movie title..." id="movie">
+            <div class="but-cont d-flex justify-content-center">
+                <button class="btn btn-primary mt-2 fetch" id="btn" onclick="fetchMovie()"><span id="hide">Fetch</span></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card card-body mt-2 drop-card" id="drop-card">
+            <div class="row">
+                <div class="col-sm-6">
+                    <li id="display1"></li>
+                </div>
+
+                <div class="col-sm-6 mt-2">
+                    <table id="table" class="text-right">
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <footer class="mt-5 p-3 bg-light text-center">
+            OMDB Movie Finder &copy;
+        </footer>
+</body>
+<script src="index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+    crossorigin="anonymous"></script>
+
+</html>
