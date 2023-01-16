@@ -4,13 +4,14 @@ var div = document.getElementById('div');
 var enter = document.getElementById('enter');
 var body = document.querySelector('body');
 
-
+// check input length
 function checkInputLenght() {
 	return input.value.length;
 }
 
-function checkdivlength() {
-	return div.value.length;
+// check if anyvalue is in the parent div
+const checkDiv = () => {
+	return div
 }
 
 function opendiv () {
@@ -35,6 +36,7 @@ function CreateListTag() {
 	/** deleting items */
 	function deleItem () {
 			parentDiv.remove()
+			
 	}
 	button_1.addEventListener('click', deleItem)
 
