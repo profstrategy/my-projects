@@ -9,6 +9,10 @@ function checkInputLenght() {
 	return input.value.length;
 }
 
+function checkdivlength() {
+	return div.value.length;
+}
+
 function opendiv () {
 	div.classList.add('Opendiv')
 }
@@ -91,6 +95,10 @@ function addValueOnpress(e) {
 		CreateListTag();
 		div.style.opacity = '1'
 	}
+}
+
+function emptydiv () {
+	
 }
 
 input.addEventListener('click', function () {
