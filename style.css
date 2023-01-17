@@ -894,6 +894,7 @@ section {
 @media (max-width: 720px) {
   .portfolio {
     min-height: 200vh;
+    position: relative;
   }
 
   .skills-images {
