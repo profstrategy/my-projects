@@ -167,7 +167,7 @@ function showless(off_1, show_1, off) {
 }
 
 function checkshowmore() {
-  showmore(p_tag_1, 'navbar');
+  showmore(p_tag_1, 'navbar <a href="https://willowy-marzipan-680c85.netlify.app" class="view-project">View project</a>');
   offdisplay(btn_1, btn__1);
 }
 
@@ -176,7 +176,7 @@ function checkshowless() {
 }
 
 function checkshowmore_1() {
-  showmore(p_tag_2, ' to fetch movie-title, date, year, time and images using MOVIENAME as my key');
+  showmore(p_tag_2, ' to fetch movie-title, date, year, time and images using MOVIENAME as my key <a href="https://inspiring-alpaca-0cf4eb.netlify.app" class="view-project">View project</a>');
   offdisplay(btn_2, btn__2);
 }
 
@@ -185,7 +185,7 @@ function checkshowless_1() {
 }
 
 function checkshowmore_2() {
-  showmore(p_tag_3, 'accept a user to use a unique email and password and used javascript localstorage as assumed database');
+  showmore(p_tag_3, `accept a user to use a unique email and password and used javascript localstorage as assumed database <a href="https://profstrategy.github.io/ultimate/" class="view-project">View project</a>`);
   offdisplay(btn_3, btn__3);
 }
 
@@ -194,7 +194,7 @@ function checkshowless_2() {
 }
 
 function checkshowmore_3() {
-  showmore(p_tag_4, 'The app can carry out functions like adding task, deleting task and signify already done task.');
+  showmore(p_tag_4, 'The app can carry out functions like adding task, deleting task and signify already done task. <a href="https://stellular-starship-fbdf61.netlify.app/" class="view-project">View project</a>');
   offdisplay(btn_4, btn__4);
 }
 
@@ -203,7 +203,7 @@ function checkshowless_3() {
 }
 
 function checkshowmore_4() {
-  showmore(p_tag_5, 'accept a user to use a unique email and used javascript localstorage as assumed database');
+  showmore(p_tag_5, 'attendance modal such that all student has there own unique number <a href="https://elaborate-chimera-bd1ce7.netlify.app" class="view-project">View project</a>');
   offdisplay(btn_5, btn__5);
 }
 
