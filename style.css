@@ -155,7 +155,7 @@ h6 {
   }
 
   .header_m {
-   visibility: hidden;
+    visibility: hidden;
   }
 
   #main {
@@ -684,7 +684,11 @@ section {
 }
 
 @media (max-width: 375px) {
-  .css-img, .javascript-img, .html-img, .react-img{
+
+  .css-img,
+  .javascript-img,
+  .html-img,
+  .react-img {
     width: 35px;
   }
 }
@@ -698,6 +702,7 @@ section {
     align-items: center;
   }
 }
+
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
@@ -769,6 +774,13 @@ section {
 --------------------------------------------------------------*/
 .portfolio {
   margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 50px;
+}
+
+.baby {
+  border: 1px solid black;
 }
 
 .warp {
@@ -798,7 +810,7 @@ section {
   transition: 400ms ease-in-out;
 }
 
-.warp .wrap-title {
+.wrap-title {
   font-family: 'Raleway Dots', cursive;
   color: white;
   font-size: 20px;
@@ -807,13 +819,12 @@ section {
   background-color: #2a2550;
 }
 
-.warp .warp-text,
 .text-show {
   color: white;
   margin-left: 5px;
 }
 
-.warp .project-img {
+.project-img {
   width: 100px;
   border-radius: 10px;
   background-color: #251d3a;
@@ -823,9 +834,40 @@ section {
   position: relative;
   border-radius: 10px;
   background-color: #251d3a;
-  padding-top: 10px;
-  z-index: 100;
+  min-height: 300px;
+}
 
+@media (max-width: 768px) {
+  .project-div {
+    min-height: 370px;
+  }
+
+  .wrap-title-m {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 740px) {
+  .project-div {
+    width: 90%;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 300px) {
+  .project-div {
+    width: 80%;
+    position: relative;
+    right: 7.2%;
+    min-height: 400px;
+  }
+
+  .project-div:hover {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    transform: none;
+    transition: none;
+  }
 }
 
 .project-div::after {
@@ -857,7 +899,7 @@ section {
   transition: 400ms ease-in-out;
 }
 
-.view-project{
+.view-project {
   position: relative;
   z-index: 10;
   text-align: center;
@@ -871,7 +913,6 @@ section {
 
 @media (max-width: 768px) {
   .project-div {
-    margin: 120px 0;
     height: 100px;
     z-index: 100;
     box-shadow: -3px 6px 5px -1px rgba(42, 37, 80, 0.78);
@@ -881,10 +922,6 @@ section {
     box-shadow: -4px 6px 5px -1px rgba(42, 37, 80, 0.78);
   }
 
-  .portfolio {
-    min-height: 110vh;
-  }
-
   .contact-title {
     right: 25%;
     font-size: 25px;
@@ -892,10 +929,6 @@ section {
 }
 
 @media (max-width: 720px) {
-  .portfolio {
-    min-height: 200vh;
-    position: relative;
-  }
 
   .skills-images {
     margin: 8rem 0;
@@ -909,17 +942,17 @@ section {
     0% {
       transform: rotate(0deg)translate(-130px)rotate(0deg);
     }
-  
+
     100% {
       transform: rotate(360deg)translate(-130px)rotate(-360deg);
     }
   }
-  
+
   @-webkit-keyframes react-anime {
     0% {
       transform: rotate(0deg)translate(-130px)rotate(0deg);
     }
-  
+
     100% {
       transform: rotate(360deg)translate(-130px)rotate(-360deg);
     }
@@ -932,52 +965,42 @@ section {
   }
 }
 
-  @media (max-width: 540px) {
-    .project-div {
-      width: 90%;
-      margin-top: 170px;
-      position: relative;
-      left: 5%;
-    }
+@media (max-width: 540px) {
 
-    .project-div:hover {
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      transform: scale(1.1);
-      transition: 400ms ease-in-out;
-    }
-
-    .portfolio {
-      min-height: 270vh;
-    }
-
-    #header {
-      transform: translateY(100);
-    }
-
-    .contact-title {
-      font-size: 20px;
-      right: 20%;
-      margin-top: 20px;
-    }
+  .project-div:hover {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    transform: scale(1.1);
+    transition: 400ms ease-in-out;
   }
 
-  @media (max-width: 390px) {
-    .whatsaap-img {
-      width: 15%;
-    }
-
-    .contact-title {
-      margin: 10px 0;
-      font-size: 10px;
-    }
+  .portfolio {
+    min-height: 270vh;
   }
+
+  #header {
+    transform: translateY(100);
+  }
+
+  .contact-title {
+    font-size: 20px;
+    right: 20%;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 390px) {
+  .whatsaap-img {
+    width: 15%;
+  }
+
+  .contact-title {
+    margin: 10px 0;
+    font-size: 10px;
+  }
+}
 
 @media (max-width: 375px) {
-  .portfolio {
-    min-height: 350vh;
-  }
-
   .contact-title {
     font-size: 20px;
     right: 18%;
@@ -987,10 +1010,6 @@ section {
 }
 
 @media (max-width: 360px) {
-  .portfolio {
-    min-height: 335vh;
-  }
-
   .contact-title {
     right: 22%;
   }
@@ -998,9 +1017,6 @@ section {
 
 
 @media (max-width: 414px) {
-  .portfolio {
-    max-height: 305vh;
-  }
 
   .contact-title {
     font-size: 15px;
@@ -1009,9 +1025,6 @@ section {
 }
 
 @media (max-width: 280px) {
-  .portfolio {
-    min-height: 365vh;
-  }
 
   .contact-title {
     font-size: 10px;
@@ -1022,6 +1035,7 @@ section {
   }
 }
 
+/* contact section */
 .contact {
   margin-top: 100px;
   color: white;
@@ -1106,16 +1120,18 @@ section {
   right: 0;
   background-color: green;
   z-index: -1;
-  transform:  scaleX(0);
+  transform: scaleX(0);
   transition: transform 2500ms ease-in-out;
   transform-origin: left;
 }
 
-#contact-button:hover:after, #contact-button:focus:after {
+#contact-button:hover:after,
+#contact-button:focus:after {
   transform: scaleX(1);
 }
 
-#contact-button:hover, #contact-button:focus {
+#contact-button:hover,
+#contact-button:focus {
   color: white;
 }
 
@@ -1148,9 +1164,11 @@ section {
     left: 75%;
   }
 }
+
 #div {
   position: relative;
 }
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/

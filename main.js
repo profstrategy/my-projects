@@ -313,19 +313,6 @@ function showsuccess(input) {
   container.querySelector('small').innerText = '';
 }
 
-function handleNavbar(e) {
-  if (e.target == nav_btn || nav_btn_1 || nav_btn_2 || nav_btn_3) {
-    header.classList.add('header_m');
-    body.style.overflow = 'visible';
-  }
-}
-
-function addNavbar() {
-  mobile_nav_toggle.classList.remove('bi-x');
-  mobile_nav_toggle.classList.add('bi-list')
-  header.classList.remove('header_m')
-}
-
 
 function checkForminput(inp) {
   return inp.value.length
